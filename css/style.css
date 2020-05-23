@@ -37,6 +37,7 @@ header {
     color: #ffffff;
     border-bottom: #e8491d 3px solid;
     background: #35424a;
+    text-align: center;
 }
 
 
@@ -50,16 +51,15 @@ header a {
 }
 
 header li {
+    display: flex;
     float: left;
-    padding: 0 20px 0 20px;
+    margin-left: auto;
+    text-align: center;
+    padding-left: 3em;
 }
 
 header #Branding {
     float: left;
-}
-
-header #Branding h1 {
-    margin: 0;
 }
 
 header #Branding h1 {
@@ -82,14 +82,15 @@ header a:hover {
 
 #showcase {
     min-height: 400px;
-    text-align: center;
     color: #ffffff;
     background: url("../img/ROG.jpg") no-repeat -100px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
 }
 
 #showcase h1 {
-    margin-top: 100px;
-    margin-bottom: 10px;
+    margin: auto;
     font-size: 55px;
 }
 
@@ -122,7 +123,11 @@ header a:hover {
 /* Boxes **/
 
 #boxes {
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex: 1;
+    margin: auto;
 }
 
 
@@ -136,7 +141,6 @@ header a:hover {
 /* Footer **/
 
 footer {
-    margin-top: 10px;
     padding: 10px;
     text-align: center;
     color: #ffffff;
